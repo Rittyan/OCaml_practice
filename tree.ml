@@ -1,13 +1,4 @@
-
-type tree_t = Empty (* 空 *)
-              |Leaf of int (* 葉 *)
-              | Node of tree_t * int * tree_t (* 節 *)
-
-(* tree は
- - Empty 空の木　あるいは
- - Leaf (n) 値がnの葉 あるいは
- - Node (t1, n, t2) 左の木がt1、値がn、右の木がt2の節
- という形 *)
+#use "tree_t.ml"
 
  let tree1 = Empty
  let tree2 = Leaf (3)
