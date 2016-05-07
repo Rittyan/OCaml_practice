@@ -4,5 +4,5 @@ let rec dijkstra_main eki_list ekikan_list = match eki_list with
 | [] -> []
 | first::rest ->
   let (p_saitan,v_other) = saitan_wo_bunri (first::rest) in
-  let eki_list_updated = koushin p_saitan v_other ekikan_list in
-  p_saitan :: dijkstra_main eki_list_updated ekikan_list
+    let eki_list_updated = koushin p_saitan v_other ekikan_list in
+      p_saitan :: dijkstra_main eki_list_updated ekikan_list
